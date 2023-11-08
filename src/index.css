@@ -9,17 +9,6 @@
 }
 
 /* General card styling */
-.card {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: fit; /* This will center the card contents */
-}
-
-/* Ensures the grid container itself is full-width and centered */
-.Grid-container {
-  justify-content: center;
-}
 
 /* You can apply this class to the header to ensure it is styled correctly */
 .page-header {
