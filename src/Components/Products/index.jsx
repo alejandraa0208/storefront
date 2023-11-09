@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../../store/cart';
+import { handleAddToCart } from '../../store/cart';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
@@ -45,7 +45,7 @@ const Products = () => {
                 <Button
                   variant='contained'
                   color='primary'
-                  onClick={() => dispatch(addToCart(product))}
+                  onClick={() => dispatch(handleAddToCart(product))}
                 >
                   Add to Cart
                 </Button>

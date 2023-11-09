@@ -7,6 +7,12 @@ const initialState = {
     ],
     activeCategory: null,
   };
+
+  export const fetchCategories = () => async (dispatch) => {
+    const response = await fetch('https://api-js401.herokuapp.com/api/v1/categories');
+    const data = await response.json();
+    dispatch(setCategories(data.results));
+  }
   
   export const categoriesSlice = createSlice({
     name: 'categories',
